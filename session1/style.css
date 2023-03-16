@@ -1,0 +1,152 @@
+#arrow {
+  width: 15px;
+}
+
+#bell {
+  width: 20px;
+  left: 200px;
+  top: 5px;
+  position: relative;
+}
+
+.outer_box {
+  padding: 30px 20px;
+  position: absolute;
+}
+#title {
+  line-height: 40px;
+  position: relative;
+  left: 110px;
+}
+
+.second {
+  position: absolute;
+}
+
+.second_number {
+  top: 40px;
+  left: 170px;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.second_name {
+  top: 40px;
+  left: 160px;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+#profile {
+  border-radius: 100%;
+  width: 80px;
+  left: 20px;
+  top: 20px;
+  position: absolute;
+}
+
+.follower {
+  padding-left: 50px;
+}
+
+.following {
+  padding-left: 50px;
+}
+
+#follower {
+  padding-left: 40px;
+}
+
+#following {
+  padding-left: 35px;
+}
+
+.explain {
+  left: 30px;
+  position: absolute;
+}
+
+#main_explain {
+  font-size: 13px;
+  top: 105px;
+  position: relative;
+}
+
+#sub_explain {
+  font-size: 12px;
+  top: 95px;
+  position: relative;
+}
+.box {
+  position: absolute;
+  left: 30px;
+  top: 220px;
+}
+
+#following_box {
+  background-color: lightgrey;
+  padding: 5px 65px;
+  font-size: 12px;
+  border-radius: 10px 10px;
+}
+
+#message_box {
+  background-color: lightgrey;
+  padding: 5px 65px;
+  font-size: 12px;
+  border-radius: 10px 10px;
+}
+
+.menu {
+  position: absolute;
+  top: 260px;
+  left: 35px;
+}
+
+#nine {
+  width: 20px;
+  padding: 5px 70px;
+}
+
+#tag {
+  width: 20px;
+  padding: 5px 75px;
+}
+
+#underline {
+  text-decoration: underline;
+  color: black;
+  text-decoration-line: 1px solid black;
+}
+
+.first_container {
+  position: absolute;
+  left: 25px;
+  top: 300px;
+}
+#first {
+  width: 110px;
+}
+#second {
+  width: 110px;
+}
+#third {
+  width: 110px;
+}
+
+.second_container {
+  position: absolute;
+  left: 25px;
+  top: 420px;
+}
+#fourth {
+  width: 110px;
+}
+#five {
+  width: 110px;
+}
+#six {
+  width: 110px;
+}
