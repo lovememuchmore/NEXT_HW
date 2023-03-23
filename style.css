@@ -1,0 +1,194 @@
+.container {
+  background: lightgray;
+  width: 375px;
+  height: 845px;
+  position: relative;
+  margin: 0px auto;
+  padding: 0;
+}
+
+.top {
+  position: absolute;
+}
+
+#toss_logo {
+  position: relative;
+  width: 130px;
+  top: 15px;
+}
+
+#bell {
+  width: 30px;
+  left: 180px;
+  position: relative;
+}
+
+.toss_bank {
+  width: 295px;
+  height: 110px;
+  top: 88px;
+  position: absolute;
+  background: white;
+  margin: 0 auto;
+  border-radius: 30px;
+  left: 20px;
+  padding: 20px;
+}
+
+#name {
+  margin: 0;
+  position: absolute;
+  left: 25px;
+}
+
+#elephant {
+  width: 50px;
+  position: relative;
+  top: 50px;
+  left: 10px;
+}
+
+#explain {
+  font-size: 15px;
+  position: relative;
+  left: 80px;
+  bottom: 15px;
+}
+
+.arrow {
+  width: 18px;
+  position: absolute;
+  top: 23px;
+  left: 290px;
+}
+
+.asset {
+  width: 295px;
+  height: 330px;
+  top: 250px;
+  position: absolute;
+  background: white;
+  margin: 0 auto;
+  border-radius: 30px;
+  left: 20px;
+  padding: 20px;
+}
+
+#title {
+  position: absolute;
+  margin: 0;
+  left: 25px;
+}
+
+.logo {
+  flex-direction: column;
+}
+
+#kakao1 {
+  position: relative;
+}
+
+.kakao_logo1 {
+  width: 50px;
+  top: 50px;
+  position: relative;
+  border-radius: 30px;
+}
+
+#kakao_1 {
+  left: 70px;
+  position: relative;
+  bottom: 15px;
+  padding: 0;
+  font-size: 15px;
+}
+
+.kakao_logo2 {
+  width: 50px;
+  position: relative;
+  border-radius: 30px;
+}
+
+#send1 {
+  position: absolute;
+  bottom: 25px;
+  left: 220px;
+  background-color: lightgray;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+#kakao_2 {
+  left: 70px;
+  position: relative;
+  padding: 0;
+  bottom: 65px;
+  font-size: 15px;
+}
+
+#send2 {
+  position: absolute;
+  bottom: 210px;
+  left: 240px;
+  background-color: lightgray;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#kb_logo1 {
+  position: absolute;
+  width: 50px;
+  bottom: 105px;
+  left: 20px;
+}
+#kb_logo2 {
+  position: absolute;
+  width: 50px;
+  bottom: 35px;
+  left: 20px;
+}
+
+#kb_1 {
+  position: relative;
+  bottom: 45px;
+  font-size: 15px;
+  left: 70px;
+}
+#kb_2 {
+  position: relative;
+  bottom: 30px;
+  font-size: 15px;
+  left: 70px;
+}
+
+#send3 {
+  position: absolute;
+  bottom: 130px;
+  left: 240px;
+  background-color: lightgray;
+  padding: 5px 15px;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#footerbar {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 120px;
+  margin-bottom: 60px;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  left: 40px;
+  bottom: 20px;
+}
+
+.footer {
+  position: absolute;
+  width: 400px;
+  border-radius: 60px 60px 0 0;
+  background-color: white;
+  left: -30px;
+}
