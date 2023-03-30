@@ -1,0 +1,30 @@
+#introduce_main {
+  color: rgb(0, 0, 0);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+#introduce_quote {
+  color: crimson;
+}
+
+.introduce {
+  padding: 10em 5em;
+}
+
+#me {
+  position: absolute;
+  left: 57em;
+  width: 6em;
+  bottom: 2em;
+  border-radius: 50%;
+}
+
+* {
+  background-color: rgb(255, 221, 227);
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'portfolio.css' %}"
+    />
+  </head>
+  <body>
+    <div class="header">
+      <p><a href="{% url 'info' %}">INFO</a></p>
+      {% csrf_token %}
+      <p><a href="{% url 'portfoilo' %}">PORTFOLIO</a></p>
+      {% csrf_token %}
+      <img id="first_hw" src="../static/instagram.jpg" width="300px" />
+      <p>
+        처음으로 만들어 본 클론코딩입니다!<br />NEXT의 인스타그램을
+        해킹해보았어요(?)
+      </p>
+    </div>
+  </body>
+</html>

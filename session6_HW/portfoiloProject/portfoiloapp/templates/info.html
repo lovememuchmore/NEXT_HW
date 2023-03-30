@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'info.css' %}" />
+  </head>
+
+  <body>
+    <div class="header">
+      <p><a href="{% url 'info' %}">INFO</a></p>
+      {% csrf_token %}
+      <p><a href="{% url 'portfoilo' %}">PORTFOLIO</a></p>
+      {% csrf_token %}
+    </div>
+    <div class="introduce">
+      <h1 id="introduce_main">재미와 성장을 좇는 사람, <br />최유빈입니다</h1>
+      <h3 id="introduce_quote">
+        "삶은 생각보다 딱 떨어지지 않으니 낙담하지 말 것"
+      </h3>
+    </div>
+    <div id="me"><img src="../static/me.jpg" width="500px" /></div>
+  </body>
+</html>
