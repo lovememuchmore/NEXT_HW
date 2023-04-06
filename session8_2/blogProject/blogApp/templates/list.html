@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>List</title>
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'listStyle.css'%}" />
+  </head>
+  <body>
+    <h2>신짱구의 BLOG</h2>
+    <div class="newBlog">
+      <a href="{% url 'new' %}"><b>글을 적어봐요</b></a>
+    </div>
+    <div class="categoryContainer">
+      <div class="categoryItem">
+        <a href="{% url 'category' 'hobby' %}">취미({{hobbies_len}})</a>
+        <div class="imgShow">
+          <img src="../static/image/hobby.jpg" />
+        </div>
+      </div>
+      <div class="categoryItem">
+        <a href="{% url 'category' 'food' %}">음식({{foods_len}})</a>
+        <div class="imgShow">
+          <img src="../static/image/food.jpg" />
+        </div>
+      </div>
+      <div class="categoryItem">
+        <a href="{% url 'category' 'programming' %}"
+          >프로그래밍({{programmings_len}})</a
+        >
+        <div class="imgShow">
+          <img src="../static/image/coding.jpg" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
