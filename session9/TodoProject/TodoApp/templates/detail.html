@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'detailstyle.css' %}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <div>
+        {% for Todo in Todos %}
+        <h2 class="title">{{ Todo.title }}</h2>
+        <div>
+          <span>deadline: {{ Todo.end_date }}</span>
+        </div>
+        <p>{{ Todo.content }}</p>
+        <div>
+          <a href="{% url 'home' %}">리스트로</a>
+          <a href="{% url 'update' Todo.id %}">고칠래</a>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </body>
+</html>

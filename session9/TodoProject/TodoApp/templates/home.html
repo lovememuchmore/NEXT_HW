@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'homestyle.css' %}"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="background">
+      <h1><a class="title" href="{% url 'home' %}">TO DO LIST</a></h1>
+      <div>
+        <a href="{% url 'new' %}">MORE</a>
+        <ul>
+          {% for Todo in Todos %}
+          <li>
+            <span>D-{{ Todo.end_date }}</span>
+            <span>{{ Todo.title }}</span>
+            <a href="{% url 'detail' Todo.pk %}">DETAIL</a>
+            <a href="{% url 'delete' Todo.pk %}">DELETE</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
