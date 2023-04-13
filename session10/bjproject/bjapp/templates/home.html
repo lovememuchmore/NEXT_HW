@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block css %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'home.css' %}" />
+{% endblock %} {% block title %}
+<div class="title">👽3학년이 웃겨?👺</div>
+{% endblock %} {% block content %}
+<br /><br />
+<div class="posts_box">
+  {% for post in posts %}
+  <a href="{% url 'detail' post.pk %}">
+    <div class="post_wrapper">
+      <div class="post_title">{{post.title}}</div>
+    </div>
+  </a>
+  {% endfor %}
+</div>
+<div>
+  <br /><br />
+  <a id="postbutton" href="{% url 'new' %}">마구적기</a>
+</div>
+{% endblock %}

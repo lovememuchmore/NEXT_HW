@@ -1,0 +1,12 @@
+{% extends 'base.html' %} {% block css %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'new.css' %}" />
+{% endblock %} {% block title %} New! {% endblock %} {% block content %}
+<div class="new-post_container">
+  <form method="POST" action="">
+    {% csrf_token %}
+    <input type="text" placeholder="오늘은 또" name="title" /><br />
+    <textarea placeholder="무슨 일이?" name="content"></textarea><br />
+    <input id="new-post_btn" type="submit" value="끄적끄적" />
+  </form>
+</div>
+{% endblock %}

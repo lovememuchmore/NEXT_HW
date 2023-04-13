@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block css %} {% load static %}
+<link rel="stylesheet" type="text/css" href="{% static 'detail.css' %}" />
+{% endblock %} {% block title %}{% endblock %} {% block content %}
+<div>
+  <h2>오늘은 또</h2>
+  <p>{{ post.title }}</p>
+</div>
+<div>
+  <h2>무슨 일이?</h2>
+  <p>{{ post.content }}</p>
+  <form method="POST">
+    {% csrf_token %}
+    <input type="text" name="content" placeholder="공감해주세요" />
+    <button type="submit">달기</button>
+  </form>
+
+  {% for comment in post.comments.all %}
+  <li>
+    {{comment.content}}
+    <a href="{% url 'delete-comment' post.pk comment.pk %}">삭제</a>
+    <div class="comment_write">
+      <input type="text" name="recomment" placeholder="또 공감해주세요" />
+      <button type="submit">달기</button>
+    </div>
+  </li>
+  {% endfor %}
+</div>
+<a href="{% url 'home' %}">홈으로</a>
+<a href="{% url 'update' post.pk %}">수정하기</a>
+<a href="{% url 'delete' post.pk %}">삭제하기</a>
+{% endblock %}
